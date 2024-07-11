@@ -1,7 +1,7 @@
 import React from "react";
 
-function Menu(props){
-    return(
+function Menu(props) {
+    return (
         <div>
             <h2>Name: {props.name}</h2>
             <p>price ${props.price}</p>
@@ -11,3 +11,4 @@ function Menu(props){
 
 }
 export default Menu;
+// rafce

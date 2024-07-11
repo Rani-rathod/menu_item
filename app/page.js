@@ -25,18 +25,37 @@ let menuItems = [
 
 function Home() {
   return (
-    <div>
+    <div className="Box">
       <h1>Menu</h1>
 
-      <ManuItem/> 
+      <ManuItem />
 
       {menuItems.map((item) => (
-      <Menu
-          name = {item.name}
-          price = {item.price}
-          description = {item.description}
+        <Menu
+          name={item.name}
+          price={item.price}
+          description={item.description}
         />
       ))}
+
+      <Menu
+        name={menuItems[0].name}
+        price={menuItems[0].price}
+        description={menuItems[0].description}
+      />
+
+      <Menu
+        name={menuItems[1].name}
+        price={menuItems[1].price}
+        description={menuItems[1].description}
+      />
+
+
+      <Menu
+        name={menuItems[2].name}
+        price={menuItems[2].price}
+        description={menuItems[2].description}
+      />
     </div>
   );
 }
